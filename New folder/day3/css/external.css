@@ -1,0 +1,8 @@
+#j1{
+	height: 304px;
+	width:204px;
+	text-align:center;
+	background-color: antiquewhite!important;
+	display: grid;
+	border :10px dashed blue ;
+}

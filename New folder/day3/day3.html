@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>type of css</title>
+	<style>
+		div{
+			background-color: gray;
+			height: 270px;
+			width: 220px;
+
+		}
+		.divCls{background-color: aqua;height: 250px;width: 235px;font-size: 18px;color: blueviolet;}
+		#d1{background-color:palegoldenrod; font-size: 20px; font-family: sans-serif;color: cadetblue; }
+		.dot {
+  height: 125px;
+  width: 125px;
+  background-color: #25cb;
+  border-radius: 12%;
+  display: inline-block;
+}
+	</style>
+	<link type="text/css" href="css/external.css" rel="stylesheet"/>
+	
+</head>
+<body>
+	<div style="background-color: red;height:200px;width:200px">
+		inline style
+	</div><hr/>
+
+	<div>
+		internal style
+	</div><hr/>
+
+	<div>
+		internal style
+	</div><hr/>
+	<div>
+		internal style
+	</div>
+	<hr/>
+	<div class="divCls"> 
+		internal style--class name 
+	</div>
+	<hr/>
+
+	<div class="divCls"> 
+		internal style--class name 
+	</div>
+	<hr/>
+	<div  style="height: 350px; width:450px" class="divCls" id="d1"> 
+		internal style--class name with id
+	</div>
+	<span class="dot"></span>
+<span class="dot"></span>
+<div id="j1">	
+	external css
+</div>
+</body>
+</html>
