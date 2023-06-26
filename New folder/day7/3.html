@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>form </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+	<style type="text/css">
+		#CNAForm{
+			margin-top: 40px;
+			margin-bottom: 40px;
+			box-shadow: 0px 0px 3px gray;
+			background-color: antiquewhite ;
+		}
+		i.fa,b{
+			color: teal;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-md-offset-4 col-sm-4 col-sm-offset-4 col-lg-3 col-lg-offset-4" id="CNAForm">
+				<div class="text-center"><h3><i class="fa fa-user"></i>Create New User</h3>
+				</div>	<br>
+					<div class="form-group"><b>FirstName:</b>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="fa fa-user"></i>
+							</span>
+							<input type="text" id="TxtFirstName" maxlength="20" placeholder="Enter your FirstName" class="form-control">
+						</div>
+						<small id="TxtFirstNameValidate" class="text-danger"></small>
+					</div>
+					<div class="form-group"><b>LastName:</b>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="fa fa-user"></i>
+							</span>
+							<input type="text" id="TxtLastName" maxlength="20" placeholder="Enter your LastName" class="form-control">
+						</div>
+						<small id="TxtLastNameValidate" class="text-danger"></small>
+					</div>
+				<div class="form-group"><b>Contact no:</b>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="fa fa-phone"></i>
+							</span>
+							<input type="text" id="TxtContactNo" maxlength="20" placeholder="Enter your Contact" class="form-control">
+						</div>
+						<small id="TxtContactNoValidate" class="text-danger"></small>
+				</div>
+				<div class="form-group"><b>Gender:</b>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="fa fa-Male"></i>|<i class="fa fa-Female"></i>
+							</span><select class="form-control" id="DDL-Generator">
+								<option value="f">Female</option>
+								<option value="m">Male</option>
+							</select>
+							
+						</div>
+						</div>
+				<div class="form-group"><b>Email-id:</b>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="fa fa-envelope"></i>
+							</span>
+							<input type="text" id="TxtEmail" maxlength="200" placeholder="Enter your Email-id" class="form-control">
+						</div>
+						<small id="TxtEmailValidate" class="text-danger"></small>
+				</div>
+				<div class="form-group"><b>Password:</b>
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="fa fa-key"></i>
+							</span>
+							<input type="password" id="TxtpassId" maxlength="20" placeholder="Enter your Password" class="form-control">
+						</div>
+						<small id="TxtPasswordValidate" class="text-danger"></small>
+				</div>
+				<div class="form-group">
+					<a id="BtnCreateNewAccount" class="btn btn-primary">
+						<i class ="fa fa-user-plus" style="color:#ffffff"></i>Create New Account</a>
+
+					</div>
+					
+				</div>
+			
+				</div>
+			</div>
+	</div>
+</body>
+</html>
