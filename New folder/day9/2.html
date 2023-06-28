@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>While loop</title>
+</head>
+<body>
+	<h2>The While Loop</h2>
+	<p id="Demo"></p>
+	<script type="text/javascript">
+		let i=0;
+		let txt="";
+		while(i<=10)
+		{
+			txt+="<br>the number is"+i;
+			i++;
+		}
+		document.getElementById("Demo").innerHTML=txt;
+	</script>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		const cars=["BMW","AUDI","AUSTIN MARTIN","FORD","MERCEDES"];
+		let j=0;
+		let tx="";
+		while(cars[j]){
+			tx+=cars[j]+"<br/>";
+			j++;
+		}
+		document.getElementById("demo").innerHTML=tx;
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head><title>do while</title>
+	</head>
+	<body>
+		<h2>DO WHILE LOOP</h2>
+		<p id="demo"></p>
+	<script type="text/javascript">
+		
+		let j=10;
+		let tx="";
+		do{
+			tx+="The number is:"+j+"<br/>";
+			j++;
+		}while(j<20)
+		document.getElementById("demo").innerHTML=tx;
+	</script>
+	<h2>FOR LOOP IN JAVASCRIPT</h2>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		const cars=["BMW","AUDI","AUSTIN MARTIN","FORD","MERCEDES"];
+		let i=0;
+		let txt="";
+		for(;cars[i];i++){
+			txt+=cars[i]+"<br/>";
+		}
+		document.getElementById("demo1").innerHTML=txt;
+	</script>
+	<p id="demo2" style="font-size: 20px;"></p>
+	<script type="text/javascript">
+		let langauge="javascript";
+		let tx1="";
+		for(let x of langauge){
+			tx1+=x+"<br/>";
+		}
+		document.getElementById("demo2").innerHTML=tx1;</script>
+<p id="demo3"></p>
+<script type="text/javascript">
+	const c=["BMW","VOLVO","Mini cooper"];
+	let t="";
+	for(let x1 of c){
+		t+=x1+"<br/>";
+	}
+	document.getElementById("demo3").innerHTML=t;
+</script>
+	</body>
+</html>
