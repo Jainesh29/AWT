@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>JQuery interaction</title>
+	 <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+      <style type="text/css">
+      	#Mydiv,#MyHomediv,#MyHorizontalDiv,#MyVerticalDiv,#MyThreeSecondsDelayDiv{
+      		width:200px;
+      		height:200px;
+      		padding:10px;
+      		background-color: red;
+      		color:#fffff;
+      		font-size: large;
+      		font-weight:bold;
+      		} 
+      		#MyFiftyPixelDiv{
+      			width:400px;
+      		height:200px;
+      		padding:10px;
+      		background-color: red;
+      		color:#fffff;
+      		font-size: large;
+      		font-weight:bold;
+      		}
+ .
+ 0     		div{
+      			border: solid 3px #000000;
+      		}
+      </style>
+      <script type="text/javascript">
+      	$(document).ready(function()
+      	{
+      		$("#MyDiv").draggable();
+      		$("#MyHomeDiv span").draggable({
+      			containment:"#MyHomeDiv"
+      		});
+      		$("#MyHorizontalDiv span").draggable({
+      			axis:"x"
+      		});
+      		$("#MyVerticalDiv span").draggable({
+      			axis:"y"
+      		});
+      		$("#MyFiftyPixelDiv span").draggable({
+      			distance:50
+      		});
+      		$("#MyThreeSecondsDelayDiv span").draggable({
+      			delay:3000
+      		});
+      	});
+      </script>
+</head>
+<body>
+	<div id="MyDiv">
+		<p>Hello Students..</p>
+	</div>
+	<hr>
+	<div id="MyHomeDiv">
+		<span>This is my home and i can move it only..</span>
+	</div>
+	<hr/>
+	<div id="MyHorizontalDiv">
+		<span>I can move Only Horizontaly</span><br><br>
+	</div>
+	<hr>
+	<div id="MyVerticalDiv">
+		<span>I can move only vertically</span><br><br>
+	</div>
+	<hr>
+	<div id ="MyThreeSecondsDelayDiv">
+		<span>I can move only after 3 seconds...</span><br><br>
+	</div>
+<hr>
+<div id="MyFiftyPixelDiv">
+	<span> I can only After 200px</span><br><br>
+</div>
+</body>
+</html>
