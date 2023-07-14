@@ -1,0 +1,141 @@
+<!-- <html lang = "en">
+    <head>
+        <title>Star Ratings</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="JScripts/star-rating.js" type="text/javascript"></script>        
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+				$("#stars-default").rating('create',
+                   {
+                        onClick: function () {
+                        a= this.attr('data-rating')
+						   
+                        }
+                    });
+                    return a;
+                });
+        </script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    </head>
+    <body width="25px">
+        <form>
+        name:
+        <input type="text" name="name"><br>
+        Opinion
+        <textarea rows="3" name = "complain"></textarea>
+          <div>
+                <table>
+	                <tr>
+		                <td>Rating stars</td>
+		                <td>
+							<div id="stars-default">
+								<input type="hidden" value="1" name="rating"/>
+							</div>
+						</td>
+	                </tr>
+	            </table>
+           </div>
+           <input type="Submit"/>
+           </form>
+		</body>  
+     
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <style>
+    body{
+        text-align: center;
+    }
+    .rating1 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+
+    }
+    .rating1 input {
+      display: none;
+    }
+    .rating1 label {
+      font-size: 2rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      color: #ddd;
+    }
+    .rating1 label:hover,
+    .rating1 label:hover ~ label,
+    .rating1 input:checked ~ label {
+      color: #ffcc00;
+    }
+    .rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+    .rating input {
+      display: none;
+    }
+    .rating label {
+      color: #ddd;
+      font-size: 2rem;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input:checked ~ label {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+    
+  <h1>Feedback Form</h1>
+  
+  <form action="feedback.php" method="POST">
+    <label for="name">Name:</label>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+    
+    <!-- <label for="rating">Rating:</label>
+    <div class="rating">
+      <input type="radio" id="star5" name="rating" value="5" required>
+      <label for="star5">&#9733;</label>
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4">&#9733;</label>
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3">&#9733;</label>
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2">&#9733;</label>
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1">&#9733;</label>
+    </div><br><br> -->
+    <div class="rating1">
+        <input type="radio" id="smiley5" name="rating" value="5" required>
+        <label for="smiley5">&#128522;</label>
+        <input type="radio" id="smiley4" name="rating" value="4">
+        <label for="smiley4">&#128578;</label>
+        <input type="radio" id="smiley3" name="rating" value="3">
+        <label for="smiley3">&#128528;</label>
+        <input type="radio" id="smiley2" name="rating" value="2">
+        <label for="smiley2">&#128532;</label>
+        <input type="radio" id="smiley1" name="rating" value="1">
+        <label for="smiley1">&#128542;</label>
+      </div><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
